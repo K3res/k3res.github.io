@@ -5,10 +5,11 @@ if (form && status) {
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
+    // Status beim Starten: Gold
     status.textContent = 'Sending...';
     status.classList.remove('hidden');
     status.classList.remove('text-red-600');
-    status.classList.add('text-green-600');
+    status.classList.add('text-amber-800');
 
     try {
       const response = await fetch(form.action, {
@@ -24,8 +25,9 @@ if (form && status) {
         throw new Error('Form submission failed');
       }
     } catch (error) {
+      // Fehlerfall bleibt rot, damit der Nutzer den Unterschied sieht
       status.textContent = 'There was an error. Please try again.';
-      status.classList.remove('text-green-600');
+      status.classList.remove('text-amber-800');
       status.classList.add('text-red-600');
     }
 
@@ -33,6 +35,8 @@ if (form && status) {
     window.statusTimeout = setTimeout(function () {
       status.classList.add('hidden');
       status.textContent = '';
+      // Gold-Klasse für den nächsten Durchlauf sicherheitshalber entfernen
+      status.classList.remove('text-amber-800');
     }, 5000);
   });
 }
