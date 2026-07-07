@@ -262,47 +262,7 @@
                         </div>
                 </div>
         </footer>
-
-        <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                        const buttons = document.querySelectorAll('.filter-btn');
-                        const freeTools = document.getElementById('free-tools-section');
-                        const productsSection = document.getElementById('products-section');
-                        const productsHeader = document.getElementById('products-header');
-                        const cvssPro = document.getElementById('cvss-pro-card');
-                        const comingSoon = document.getElementById('coming-soon-section');
-
-                        buttons.forEach(button => {
-                                button.addEventListener('click', () => {
-                                        const category = button.getAttribute('data-category');
-
-                                        // Button Styles aktualisieren
-                                        buttons.forEach(btn => {
-                                                btn.classList.remove('active');
-                                        });
-                                        button.classList.add('active');
-
-                                        // Filter Logik
-                                        // Zuerst alles zurÃ¼cksetzen
-                                        [freeTools, productsSection, productsHeader, cvssPro, comingSoon]
-                                        .filter(Boolean)
-                                        .forEach(el => el.classList.remove('hidden'));
-
-                                        if (category === 'cyber-risk') {
-                                                comingSoon.classList.add('hidden');
-                                        } else if (category === 'offensive-security') {
-                                                freeTools.classList.add('hidden');
-                                                cvssPro.classList.add('hidden');
-                                                productsSection.classList.add('hidden');
-                                        } else if (['smart-learning', 'gaming-labs', 'smart-utilities'].includes(category)) {
-                                                freeTools.classList.add('hidden');
-                                                productsSection.classList.add('hidden');
-                                               
-                                        }
-                                });
-                        });
-                });
-        </script>
+        <script src="js/searchfilter.js"></script>
         <script src="js/init.js"></script>
 </body>
 
