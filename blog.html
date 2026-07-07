@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KintsuKai - Blog</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <meta name="description"
+        content="Insights, updates, and stories from the KintsuKai founder about building resilient IT tools for everyone." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="css/tailwind-config.js" id="tailwind-config"></script>
+</head>
+
+<body
+    class="bg-background text-on-background min-h-screen flex flex-col antialiased font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface-container-lowest text-primary font-['Manrope'] antialiased tracking-tight docked full-width top-0 z-50 border-b border-surface-variant flat no-shadows">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-12 h-24">
+            <a href="index.html" class="flex items-center"><img src="logo.png" alt="KintsuKai"
+                    class="h-[110px] w-auto" /></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="index.html">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="products.html">Products</a>
+                <a class="text-primary border-b border-secondary pb-1 hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="blog.html">Blog</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="about.html">About</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="contact.html">Contact</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="discover_Communities.html">Discover Communities</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow flex flex-col items-center w-full max-w-[1200px] mx-auto px-8 py-xl gap-xl">
+        <!-- Page Header -->
+        <header class="w-full text-center max-w-2xl mx-auto space-y-md">
+            <h1 class="text-h1 font-h1 text-primary">Blog</h1>
+            <p class="text-body-lg font-body-lg text-on-surface-variant">The latest news, updates, and insights about
+                KintsuKai, its tools, and the community.</p>
+            <div class="w-16 h-px bg-[#fed65b] mx-auto mt-8"></div>
+        </header>
+
+        <!-- Blog Posts Grid -->
+        <section class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <!-- Blog Post Template Card -->
+            <a href="blog/welcome-to-kintsukai.html"
+                class="group bg-surface-container-lowest border border-surface-variant rounded-lg overflow-hidden flex flex-col transition-shadow hover:shadow-md cursor-pointer">
+
+                <!-- Content -->
+                <div class="p-md flex flex-col flex-grow">
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span
+                            class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-DEFAULT text-caption font-caption">Announcement</span>
+                        <span
+                            class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-DEFAULT text-caption font-caption">KintsuKai</span>
+                    </div>
+                    <!-- Title -->
+                    <h3
+                        class="text-h3 font-h3 text-primary mb-2 group-hover:text-secondary-fixed-dim transition-colors line-clamp-2">
+                        Welcome to KintsuKai</h3>
+                    <!-- Excerpt -->
+                    <p class="text-body-md font-body-md text-on-surface-variant mb-4 line-clamp-3">Welcome to KinstuKai, a community built for people who want to explore, share, and improve tools and ideas together.</p>
+                    <!-- Meta Footer -->
+                    <div class="mt-auto flex items-center justify-between border-t border-surface-variant pt-4">
+                        <div class="flex items-center gap-3">
+                            <!-- Author Avatar -->
+                            <div
+                                class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-surface-variant flex-shrink-0">
+                                <img src="blog/ks_image.jpeg" alt="Founder" class="w-full h-full object-cover" />
+                            </div>
+                            <span class="text-label-sm font-label-sm text-primary">Founder</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-caption font-caption text-outline">
+                            <span>July 08, 2026</span>
+                            <span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+                            <span>3 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container-lowest text-primary font-['Manrope'] text-sm tracking-wide docked full-width bottom-0 border-t border-secondary/20 flat no-shadows">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-12 py-16 gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div class="text-on-surface-variant font-caption text-caption uppercase tracking-widest">
+                    Â© 2026 KintsuKai. All rights reserved.
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                        href="privacy.html">Privacy Policy</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                        href="terms.html">Terms of Service</a>                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="impessum.html">Imprint</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://www.linkedin.com/company/kintsukai">LinkedIn</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://github.com/kintsu-kai">GitHub</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://discord.gg/ughQasTBPz">Discord</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
+
+

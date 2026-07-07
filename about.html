@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About KintsuKai</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="css/tailwind-config.js" id="tailwind-config"></script>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+    <nav
+        class="bg-surface-container-lowest text-primary font-['Manrope'] antialiased tracking-tight docked full-width top-0 z-50 border-b border-surface-variant flat no-shadows">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-12 h-24">
+            <a href="index.html" class="flex items-center"><img src="logo.png" alt="KintsuKai"
+                    class="h-[110px] w-auto" /></a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="index.html">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="products.html">Products</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="blog.html">Blog</a>
+                <a class="text-primary border-b border-secondary pb-1 hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="about.html">About</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="contact.html">Contact</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
+                    href="discover_Communities.html">Discover Communities</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="max-w-container-max mx-auto px-gutter py-[120px] flex flex-col items-center text-center">
+            <h1 class="font-h1 text-h1 text-on-background max-w-3xl mb-md">The Art of the Mend</h1>
+            <div class="h-[1px] w-16 bg-secondary-container mb-lg"></div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                We believe that software, like life, is an ongoing process of refinement. Perfection is an illusion, but
+                resilience and continuous improvement are the true markers of craft.
+            </p>
+        </section>
+        <section class="max-w-container-max mx-auto px-gutter py-xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                <div class="md:col-span-5 md:col-start-2 flex flex-col gap-md pr-lg">
+                    <h2 class="font-h2 text-h2 text-on-background">Kintsugi meets Kaizen</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        The name "KintsuKai" is a synthesis of two profound Japanese philosophies. <strong
+                            class="text-on-surface font-medium">Kintsugi</strong> teaches us to embrace flaws, repairing
+                        broken pottery with gold to highlight the history of the object rather than disguising its
+                        damage.
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        <strong class="text-on-surface font-medium">Kaizen</strong> translates to "change for the
+                        better", a mindset of continuous, incremental improvement. Together, they form our foundational
+                        belief: transparent iteration creates unbreakable systems.
+                    </p>
+                </div>
+                <div class="md:col-span-5 md:col-start-8">
+                    <div
+                        class="aspect-[4/5] bg-surface-container-low border border-surface-variant rounded flex items-center justify-center relative overflow-hidden group p-lg">
+                        <img alt="Kintsugi stone piece" class="absolute inset-0 w-full h-full object-cover"
+                            src="piece.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-container-max mx-auto px-gutter py-xl mb-xl">
+            <div class="flex flex-col items-center mb-xl">
+                <h2 class="font-h2 text-h2 text-on-background text-center mb-sm">Principles of Practice</h2>
+                <div class="h-[0.5px] w-24 bg-surface-variant"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div
+                    class="bg-surface-container-lowest border border-surface-variant rounded p-lg flex flex-col gap-md hover:border-outline transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined icon-fill text-secondary"
+                            data-icon="handyman">handyman</span>
+                    </div>
+                    <h3 class="font-h3 text-h3 text-on-surface">Learn from Failure</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Bugs are not blemishes, they are the blueprint for a stronger foundation. We document our
+                        missteps transparently, turning fragile code into robust architecture.
+                    </p>
+                </div>
+                <div
+                    class="bg-surface border border-surface-variant rounded p-lg flex flex-col gap-md hover:border-outline transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+                    </div>
+                    <h3 class="font-h3 text-h3 text-on-surface">Start Small</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Massive overhauls breed chaos. We focus on microscopic, deliberate changes. Small, focused
+                        commits ensure precision and maintain the integrity of the whole.
+                    </p>
+                </div>
+                <div
+                    class="bg-surface-container-lowest border border-surface-variant rounded p-lg flex flex-col gap-md hover:border-outline transition-colors duration-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-secondary" data-icon="sync">sync</span>
+                    </div>
+                    <h3 class="font-h3 text-h3 text-on-surface">Grow with Feedback</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Software is a dialogue. We build tight feedback loops with our community, ensuring every mend
+                        and feature is guided by actual human needs and experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="bg-surface-container-lowest text-primary font-['Manrope'] text-sm tracking-wide docked full-width bottom-0 border-t border-secondary/20 flat no-shadows">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-12 py-16 gap-8">
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+                <div class="text-on-surface-variant font-caption text-caption uppercase tracking-widest">
+                    Â© 2026 KintsuKai. All rights reserved.
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                        href="privacy.html">Privacy Policy</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                        href="terms.html">Terms of Service</a>                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="impessum.html">Imprint</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://www.linkedin.com/company/kintsukai">LinkedIn</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://github.com/kintsu-kai">GitHub</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
+                    href="https://discord.gg/ughQasTBPz">Discord</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
+
+
