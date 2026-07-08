@@ -7,7 +7,7 @@ if (form && status) {
 
 
     status.textContent = 'Sending...';
-    status.classList.remove('hidden', 'text-red-600');
+    status.classList.remove('hidden', 'text-green-600');
     status.classList.add('text-amber-500');
 
     try {
