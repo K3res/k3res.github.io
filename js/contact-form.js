@@ -6,9 +6,9 @@ if (form && status) {
     event.preventDefault();
 
     status.textContent = 'Sending...';
-    // Hier löschen wir das alte Orange (amber) und Rot vorsorglich komplett raus
+    // Entfernt alle alten Eventuellen Farben (Orange, Rot, etc.)
     status.classList.remove('hidden', 'text-amber-500', 'text-red-600');
-    status.classList.add('text-[#D4AF37]'); // Neues Echt-Gold
+    status.classList.add('text-green-600'); // Das klassische Grün beim Senden
 
     try {
       const formData = new FormData(form);
@@ -31,15 +31,15 @@ if (form && status) {
       }
     } catch (error) {
       status.textContent = 'Something went wrong. Please try again.';
-      status.classList.remove('text-[#D4AF37]');
-      status.classList.add('text-red-600'); // Bei Fehler wird es rot
+      status.classList.remove('text-green-600');
+      status.classList.add('text-red-600'); // Bei Fehlern wird es rot
     }
 
     clearTimeout(window.statusTimeout);
     window.statusTimeout = setTimeout(function () {
       status.classList.add('hidden');
       status.textContent = '';
-      status.classList.remove('text-[#D4AF37]', 'text-red-600');
+      status.classList.remove('text-green-600', 'text-red-600');
     }, 5000);
   });
 }
