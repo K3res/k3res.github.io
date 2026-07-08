@@ -46,6 +46,8 @@
   <div class="w-full bg-surface-container-lowest border border-surface-variant rounded-xl p-lg shadow-sm">
     
     <form id="contact-form" action="https://formspree.io/f/xrewdwqj" method="POST" class="space-y-gutter">
+      <input type="text" name="_gotcha" style="display:none" />
+
       <div>
         <label class="block font-label-sm text-label-sm text-on-surface mb-xs" for="name">Name</label>
         <input class="w-full bg-surface-bright border border-surface-variant text-on-surface font-body-md text-body-md rounded-DEFAULT focus:ring-0 focus:border-tertiary transition-colors px-4 py-3" id="name" name="name" placeholder="Your full name" type="text" required />
@@ -58,14 +60,15 @@
         <label class="block font-label-sm text-label-sm text-on-surface mb-xs" for="message">Message</label>
         <textarea class="w-full bg-surface-bright border border-surface-variant text-on-surface font-body-md text-body-md rounded-DEFAULT focus:ring-0 focus:border-tertiary transition-colors px-4 py-3 resize-none" id="message" name="message" placeholder="How can we help you today?" rows="5" required></textarea>
       </div>
-      
+
       <button class="w-full bg-tertiary text-on-tertiary font-label-sm text-label-sm py-4 rounded-DEFAULT hover:bg-tertiary/90 transition-colors flex items-center justify-center" type="submit">
         Send Message
         <span class="material-symbols-outlined ml-2 text-[18px]">send</span>
       </button>
     </form>
-
-<div id="form-status" class="hidden mt-4 text-center font-bold text-amber-500 transition-all duration-500">
+    
+    <div id="form-status" class="hidden mt-4 text-center font-bold text-amber-500 transition-all duration-500"></div>
+  </div>
 </div>
 
   </div>
