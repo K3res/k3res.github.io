@@ -25,21 +25,21 @@
         <nav
                 class="bg-surface-container-lowest text-primary font-['Manrope'] antialiased tracking-tight docked full-width top-0 z-50 border-b border-surface-variant flat no-shadows">
                 <div class="flex justify-between items-center max-w-7xl mx-auto px-12 h-24">
-                        <a href="/" class="flex items-center"><img src="logo.png" alt="KintsuKai"
+                        <a href="index.html" class="flex items-center"><img src="logo.png" alt="KintsuKai"
                                         class="h-[110px] w-auto" /></a>
                         <div class="hidden md:flex items-center gap-8">
                                 <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="/">Home</a>
+                                        href="index.html">Home</a>
                                 <a class="text-primary border-b border-secondary pb-1 hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="products">Products</a>
+                                        href="products.html">Products</a>
                                 <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="blog">Blog</a>
+                                        href="blog.html">Blog</a>
                                 <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="about">About</a>
+                                        href="about.html">About</a>
                                 <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="contact">Contact</a>
+                                        href="contact.html">Contact</a>
                                 <a class="text-on-surface-variant hover:text-primary transition-colors duration-500 cursor-pointer active:opacity-70 transition-all font-label-sm text-label-sm"
-                                        href="discover_Communities">Discover Communities</a>
+                                        href="discover_Communities.html">Discover Communities</a>
                         </div>
                 </div>
         </nav>
@@ -99,16 +99,16 @@
                                                 </div>
                                         </div>
                                         <div class="flex items-center gap-4 mt-xl z-10">
-                                                <a href="cvsssense"
+                                                <a href="cvsssense.html"
                                                         class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
                                                         Learn More
                                                         <span
                                                                 class="material-symbols-outlined text-[18px]">arrow_forward</span>
-                                         </a>
-                                        <a href="https://doc.kintsukai.org/cvsssense-community.pdf" 
-                                           class="inline-block border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-container-low transition-colors text-center no-underline">
-                                           Documentation
-                                        </a>
+                                                </a>
+                                                <button
+                                                        class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-container-low transition-colors">
+                                                        Documentation
+                                                </button>
                                         </div>
                                 </div>
                                 <!-- Free Tool Info Side -->
@@ -166,7 +166,7 @@
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
                                 <div id="cvss-pro-card" data-tags="web-application management offline ai pro"
-                                        class="col-span-1 md:col-span-12 bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col md:flex-row justify-between gap-xl relative overflow-hidden group opacity-60">
+                                        class="col-span-1 md:col-span-12 bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col md:flex-row justify-between gap-xl relative overflow-hidden group">
                                         <div
                                                 class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full opacity-50 pointer-events-none">
                                         </div>
@@ -175,42 +175,60 @@
                                                         <span
                                                                 class="bg-surface-container px-3 py-1 rounded-sm font-label-sm text-caption text-on-surface flex items-center gap-2">
                                                                 <span
-                                                                        class="material-symbols-outlined text-[16px]">psychology</span>
-                                                                Coming Soon
+                                                                        class="material-symbols-outlined text-[16px]">new_releases</span>
+                                                                Version 0.8 Available
                                                         </span>
                                                 </div>
                                                 <h3 class="font-h1 text-h1 text-on-surface mt-sm">CVSSense Pro</h3>
                                                 <p class="font-body-lg text-body-lg text-on-surface-variant">
-                                                        The professional edition of our vulnerability scoring tool. Enhanced with a smart decision assistant, flexible local AI models for maximum privacy, and seamless integration with external AI APIs.
+                                                        The professional edition of our vulnerability scoring tool. Traceable CVSS v4.0 assessments with a guided decision assistant, review workflow and enterprise sign-in, installed on your own server.
                                                 </p>
                                                 <div class="flex flex-wrap gap-2 mt-3">
                                                         <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">Web Application</span>
                                                         <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">Management</span>
                                                         <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">Offline</span>
                                                         <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">Decision Assistant</span>
-                                                        <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">Local AI Assistant</span>
+                                                        <span class="px-2 py-1 bg-surface-container text-caption rounded-sm">On-Premises</span>
                                                 </div>
                                                 <!-- Features -->
-                                                <ul class="flex flex-col gap-2 mt-4 font-body-md text-on-surface-variant">
+                                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-lg gap-y-2 mt-4 font-body-md text-on-surface-variant">
                                                         <li class="flex items-center gap-2">
                                                                 <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-                                                                Intelligent Decision Assistant
+                                                                Guided Decision Assistant for CVSS v4.0
                                                         </li>
                                                         <li class="flex items-center gap-2">
                                                                 <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-                                                                Local AI Assistant capabilities
+                                                                Offline text analysis with metric suggestions
                                                         </li>
                                                         <li class="flex items-center gap-2">
                                                                 <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
-                                                                External AI connection support
+                                                                Four-eyes review and full decision history
+                                                        </li>
+                                                        <li class="flex items-center gap-2">
+                                                                <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                                                Projects, reports and OWASP Top 10 charts
+                                                        </li>
+                                                        <li class="flex items-center gap-2">
+                                                                <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                                                Single sign-on (OIDC) and two-factor login
+                                                        </li>
+                                                        <li class="flex items-center gap-2">
+                                                                <span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                                                Runs on your own server, no cloud required
                                                         </li>
                                                 </ul>
                                         </div>
                                         <div class="flex flex-col justify-end gap-4 z-10 md:min-w-[200px]">
-                                                <button disabled
-                                                        class="bg-surface-variant text-on-surface-variant font-label-sm text-label-sm px-6 py-3 rounded flex items-center justify-center gap-2 cursor-not-allowed">
-                                                        In Development
-                                                </button>
+                                                <a href="cvssense-pro.html"
+                                                        class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center justify-center gap-2 hover:bg-on-surface-variant transition-colors">
+                                                        Learn More
+                                                        <span
+                                                                class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                                </a>
+                                                <a href="mailto:kintsukai4contact@gmail.com?subject=CVSSense%20Pro%20Demo%20Request"
+                                                        class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+                                                        Request a Demo
+                                                </a>
                                         </div>
                                 </div>
                         </div>
@@ -243,13 +261,13 @@
                         <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                                 <div
                                         class="text-on-surface-variant font-caption text-caption uppercase tracking-widest">
-                                        © 2026 KintsuKai. All rights reserved.
+                                        Â© 2026 KintsuKai. All rights reserved.
                                 </div>
                                 <div class="flex items-center gap-6">
                                         <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
-                                                href="privacy">Privacy Policy</a>
+                                                href="privacy.html">Privacy Policy</a>
                                         <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption"
-                                                href="terms">Terms of Service</a>                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="impessum">Imprint</a>
+                                                href="terms.html">Terms of Service</a>                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="impessum.html">Imprint</a>
                                 </div>
                         </div>
                         <div class="flex items-center gap-6">
@@ -262,7 +280,47 @@
                         </div>
                 </div>
         </footer>
-        <script src="js/searchfilter.js"></script>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const buttons = document.querySelectorAll('.filter-btn');
+                        const freeTools = document.getElementById('free-tools-section');
+                        const productsSection = document.getElementById('products-section');
+                        const productsHeader = document.getElementById('products-header');
+                        const cvssPro = document.getElementById('cvss-pro-card');
+                        const comingSoon = document.getElementById('coming-soon-section');
+
+                        buttons.forEach(button => {
+                                button.addEventListener('click', () => {
+                                        const category = button.getAttribute('data-category');
+
+                                        // Button Styles aktualisieren
+                                        buttons.forEach(btn => {
+                                                btn.classList.remove('active');
+                                        });
+                                        button.classList.add('active');
+
+                                        // Filter Logik
+                                        // Zuerst alles zurÃ¼cksetzen
+                                        [freeTools, productsSection, productsHeader, cvssPro, comingSoon]
+                                        .filter(Boolean)
+                                        .forEach(el => el.classList.remove('hidden'));
+
+                                        if (category === 'cyber-risk') {
+                                                comingSoon.classList.add('hidden');
+                                        } else if (category === 'offensive-security') {
+                                                freeTools.classList.add('hidden');
+                                                cvssPro.classList.add('hidden');
+                                                productsSection.classList.add('hidden');
+                                        } else if (['smart-learning', 'gaming-labs', 'smart-utilities'].includes(category)) {
+                                                freeTools.classList.add('hidden');
+                                                productsSection.classList.add('hidden');
+                                               
+                                        }
+                                });
+                        });
+                });
+        </script>
         <script src="js/init.js"></script>
 </body>
 
