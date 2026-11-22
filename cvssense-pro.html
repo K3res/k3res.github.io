@@ -4,7 +4,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>CVSSense Pro - KintsuKai</title>
 <link rel="icon" href="favicon.png" type="image/png" />
-<meta name="description" content="CVSSense Pro: traceable CVSS v4.0 assessments for teams, installed on your own server. By KintsuKai."/>
+<meta name="description" content="CVSSense Pro is in its pilot phase and offers traceable CVSS v4.0 assessments for teams, installed on your own server. Available to selected test users only. By KintsuKai."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -34,14 +34,18 @@
 <section class="flex flex-col md:flex-row gap-xl items-start">
 <div class="flex-1 flex flex-col gap-md max-w-[600px]">
 <span class="bg-surface-container px-3 py-1 rounded-sm font-label-sm text-caption text-on-surface flex items-center gap-2 w-fit">
-<span class="material-symbols-outlined text-[16px]">new_releases</span> Version 0.8 Available
+<span class="material-symbols-outlined text-[16px]" aria-hidden="true">science</span> Version 0.8 Pilot Phase
 </span>
 <h1 class="font-h1 text-h1 text-on-surface">CVSSense Pro</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant">CVSSense Pro is the professional edition of CVSSense for security teams. It turns every finding into a traceable CVSS v4.0 assessment: guided for every analyst, precise for every expert, and reviewed before it leaves your team.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">CVSSense Pro is the professional edition of CVSSense for security teams. It turns every finding into a traceable CVSS v4.0 assessment that is guided for every analyst, precise for every expert and reviewed before it leaves your team.</p>
 <p class="font-body-md text-body-md text-on-surface-variant">Installed on your own server in minutes. No cloud, no telemetry and no internet connection required. Your vulnerability data stays in house.</p>
-<div class="flex items-center gap-4 mt-md">
-<a href="mailto:kintsukai4contact@gmail.com?subject=CVSSense%20Pro%20Demo%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
-    Request a Demo
+<div class="flex items-start gap-3 bg-surface-container-lowest border border-surface-variant rounded-lg p-md">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant"><span class="font-semibold text-on-surface">Not generally available yet.</span> CVSSense Pro is in a pilot phase and is currently provided only to selected test users. The features below describe version 0.8, and version 0.9 is in testing.</p>
+</div>
+<div class="flex flex-wrap items-center gap-4 mt-md">
+<a href="mailto:kintsukai4contact@gmail.com?subject=CVSSense%20Pro%20Pilot%20Access%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
+    Request Pilot Access
     <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 <a href="products.html" class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-container-low transition-colors">Back to Products</a>
@@ -54,7 +58,7 @@
 <div class="flex items-center gap-3 mb-sm"><span class="material-symbols-outlined text-secondary text-[32px]">shield</span><span class="font-h3 text-h3 text-on-surface">At a Glance</span></div>
 <div class="space-y-4">
 <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Official CVSS v4.0 scoring, guided or manual</p></div>
-<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Every decision on record: who, when and why</p></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Every decision on record, with who, when and why</p></div>
 <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Single sign-on (OIDC) and two-factor login</p></div>
 <div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Runs on your own server, no cloud and no telemetry</p></div>
 </div>
@@ -138,7 +142,7 @@
 <section class="flex flex-col gap-lg">
 <div class="flex flex-col gap-sm">
 <h2 class="font-h2 text-h2 text-on-surface">Coming Next</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-[700px]">Our next releases build on customer feedback from 0.8. Priorities can shift with that feedback, so we do not promise dates.</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[700px]">Our next releases build on feedback from the pilot phase. Priorities can shift with that feedback, so we do not promise dates.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
@@ -154,19 +158,19 @@
 <div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
 <div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary">dashboard_customize</span></div>
 <h3 class="font-h3 text-h3 text-on-surface">UI/UX Refinements</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Clearer layouts and fewer clicks in daily scoring, based on what our customers report.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Clearer layouts and fewer clicks in daily scoring, based on what our pilot testers report.</p>
 </div>
 </div>
 </section>
-<section class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-lg relative overflow-hidden">
+<section class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col lg:flex-row justify-between items-start lg:items-center gap-lg relative overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full opacity-50 pointer-events-none"></div>
 <div class="flex flex-col gap-sm z-10 max-w-[520px]">
-<h2 class="font-h2 text-h2 text-on-surface">See CVSSense Pro in Action</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">Request a live demo or a 30-day trial license for your own server. We will get back to you personally.</p>
+<h2 class="font-h2 text-h2 text-on-surface">Interested in the Pilot?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">CVSSense Pro is not generally available yet. It is in a pilot phase and is provided only to selected test users. Tell us about your use case and we will get back to you personally.</p>
 </div>
-<div class="flex flex-col sm:flex-row items-stretch gap-4 z-10 shrink-0">
-<a href="mailto:kintsukai4contact@gmail.com?subject=CVSSense%20Pro%20Demo%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
-    Request a Demo
+<div class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-col items-stretch gap-4 z-10 lg:shrink-0">
+<a href="mailto:kintsukai4contact@gmail.com?subject=CVSSense%20Pro%20Pilot%20Access%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
+    Request Pilot Access
     <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 <a href="downloads/CVSSense_Pro_OnePager_EN.pdf" target="_blank" rel="noopener" class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-surface-container-low transition-colors">

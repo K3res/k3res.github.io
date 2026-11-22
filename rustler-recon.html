@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rustler Recon - KintsuKai</title>
+<link rel="icon" href="favicon.png" type="image/png" />
+<meta name="description" content="Rustler Recon is in its pilot phase and offers authorized web, API and network reconnaissance for your own systems. Available to selected test users only. By KintsuKai."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css" />
+<script src="css/tailwind-config.js" id="tailwind-config"></script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<nav class="bg-surface-container-lowest text-primary font-['Manrope'] antialiased tracking-tight top-0 z-50 border-b border-surface-variant">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-12 h-24">
+<a href="index.html" class="flex items-center"><img src="logo.png" alt="KintsuKai" class="h-[110px] w-auto"/></a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="index.html">Home</a>
+<a class="text-primary border-b border-secondary pb-1 hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="products.html">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="blog.html">Blog</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="contact.html">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-500 font-label-sm text-label-sm" href="discover_Communities.html">Discover Communities</a>
+</div>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-xl flex flex-col gap-xl">
+<div class="flex items-center gap-2 text-caption font-caption text-on-surface-variant">
+<a href="products.html" class="hover:text-primary transition-colors">Products</a>
+<span class="material-symbols-outlined text-[14px]" aria-hidden="true">chevron_right</span>
+<span class="text-primary">Rustler Recon</span>
+</div>
+<section class="flex flex-col md:flex-row gap-xl items-start">
+<div class="flex-1 flex flex-col gap-md max-w-[600px]">
+<span class="bg-surface-container px-3 py-1 rounded-sm font-label-sm text-caption text-on-surface flex items-center gap-2 w-fit">
+<span class="material-symbols-outlined text-[16px]" aria-hidden="true">science</span> Version 0.9 Pilot Phase
+</span>
+<h1 class="font-h1 text-h1 text-on-surface">Rustler Recon</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Rustler Recon is a reconnaissance assistant for security teams, admins and developers. It shows what a stranger can see of your website, API or server. That includes domain data, certificates, open ports, pages, interfaces and technologies, and it uses no exploits, no vulnerability payloads and no state-changing requests.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Every result is an observation or a review candidate, a hint for a human to verify and never a claimed vulnerability. It runs on your Windows machine, keeps its results in a local folder and is made for systems you own or are explicitly authorized to test.</p>
+<div class="flex items-start gap-3 bg-surface-container-lowest border border-surface-variant rounded-lg p-md">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant"><span class="font-semibold text-on-surface">Not generally available yet.</span> Rustler Recon 0.9 is in a pilot phase and is currently provided only to selected test users.</p>
+</div>
+<div class="flex flex-wrap items-center gap-4 mt-md">
+<a href="mailto:kintsukai4contact@gmail.com?subject=Rustler%20Recon%20Pilot%20Access%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
+    Request Pilot Access
+    <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+</a>
+<a href="products.html" class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-container-low transition-colors">Back to Products</a>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full opacity-50 pointer-events-none"></div>
+<div class="flex flex-col gap-md relative z-10">
+<div class="flex items-center gap-3 mb-sm"><span class="material-symbols-outlined text-secondary text-[32px]" aria-hidden="true">radar</span><span class="font-h3 text-h3 text-on-surface">At a Glance</span></div>
+<div class="space-y-4">
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">22 recon modules, from DNS and TLS to APIs and cloud storage</p></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Observation only, with no exploits and no state-changing requests</p></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Review candidates instead of unproven vulnerability claims</p></div>
+<div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span><p class="font-body-md text-body-md text-on-surface-variant">Runs locally on Windows with an offline license file and no telemetry</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="w-full h-[1px] bg-secondary-fixed/50"></div>
+<section class="flex flex-col gap-lg">
+<h2 class="font-h2 text-h2 text-on-surface">Included in Version 0.9</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">travel_explore</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Public Sources &amp; Domain</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reads robots.txt and sitemap.xml, spots visible .git folders and collects DNS, WHOIS, ASN, Wayback and public email-pattern data. Public-source modules query third-party providers, and the Google dork builder only prepares queries without sending them.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">lan</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Network Inventory</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Checks common TCP ports or your own port list, reads certificates, protocol versions and cipher strength, finds subdomains from a wordlist and through certificate transparency, and detects virtual hosts.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">language</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Web Reconnaissance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A scope-bound crawler, wordlist-based directory discovery, checks of CSP, HSTS, CORS and cookie flags, technology and CMS detection, a JavaScript inventory that keeps secrets only as redacted fingerprints, and page screenshots.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">api</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">APIs &amp; Cloud</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reads OpenAPI and Swagger specifications, checks GraphQL introspection with fixed, non-mutating queries, maps SOAP services, finds API routes and hidden GET parameters, and lists cloud storage candidates read-only.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">folder_special</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Projects &amp; Targets</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Import a scope with one target per line, expand wildcards such as *.example.com through certificate transparency and scan up to five targets in parallel, with a status for each target.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">hub</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Attack Surface &amp; Reports</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rustler Dash merges all results into assets, services, endpoints and review signals. Search and filter them, mark each candidate as open, reviewed or false positive, and create an HTML report with one click.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">fact_check</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Honest Results</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Every run reports a clear state, which is complete, partial (a provider was down), incomplete evidence, skipped or failed. Missing results are marked as incomplete instead of being shown as &ldquo;nothing found&rdquo;.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">swap_horiz</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Proxy &amp; HTTP History</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Route traffic through Burp or any HTTP(S), SOCKS5 or SOCKS5H proxy, with bypass lists and a built-in proxy test. The HTTP history keeps redacted metadata only, with no response text and no query values.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm md:col-span-2 lg:col-span-1">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">shield_lock</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Local &amp; Data-Minimal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rustler runs on your machine and writes its results to a folder you choose. Authorization headers, cookie values and detected secrets are redacted before they are saved. Rustler sends no telemetry to KintsuKai. Some modules query public third-party sources such as certificate transparency logs or the Wayback Machine.</p>
+</div>
+</div>
+</section>
+<div class="w-full h-[1px] bg-secondary-fixed/50"></div>
+<section class="flex flex-col gap-lg">
+<h2 class="font-h2 text-h2 text-on-surface">How It Works</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="font-h3 text-h3 text-secondary">1</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Enter a target</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Type a domain, IP or URL, or import many targets at once. Use only targets you own or are allowed to test.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="font-h3 text-h3 text-secondary">2</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Pick a profile</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Guided Safe Recon for a safe start, Extended Recon for more depth, or your own module selection.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="font-h3 text-h3 text-secondary">3</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Start the scan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rustler collects observations such as DNS, certificates, open ports, pages and APIs. Progress streams live in the terminal.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="font-h3 text-h3 text-secondary">4</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Read the results</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Review them in Rustler Dash or the HTML report, sorted and marked as &ldquo;to review&rdquo;, never as confirmed vulnerabilities.</p>
+</div>
+</div>
+</section>
+<div class="w-full h-[1px] bg-secondary-fixed/50"></div>
+<section class="flex flex-col gap-lg">
+<div class="flex flex-col gap-sm">
+<h2 class="font-h2 text-h2 text-on-surface">Scan Profiles</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[700px]">A profile is a ready-made module selection. Load it with one click, adjust it afterwards or save your own presets.</p>
+</div>
+<div class="hidden md:block bg-surface-container-lowest border border-surface-variant rounded-lg overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md text-on-surface-variant">
+<thead>
+<tr class="border-b border-surface-variant font-label-sm text-label-sm text-on-surface-variant">
+<th scope="col" class="px-md py-3 font-medium">Profile</th>
+<th scope="col" class="px-md py-3 font-medium whitespace-nowrap">Typical duration</th>
+<th scope="col" class="px-md py-3 font-medium">What it covers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="align-top border-b border-surface-variant">
+<th scope="row" class="px-md py-4 text-left font-semibold text-on-surface whitespace-nowrap">Guided Safe Recon</th>
+<td class="px-md py-4 whitespace-nowrap">About 2 to 5 min</td>
+<td class="px-md py-4">The recommended start with a fast, bounded overview of a target&rsquo;s public footprint, without wordlist brute-forcing.</td>
+</tr>
+<tr class="align-top border-b border-surface-variant">
+<th scope="row" class="px-md py-4 text-left font-semibold text-on-surface whitespace-nowrap">Extended Recon</th>
+<td class="px-md py-4 whitespace-nowrap">About 15 to 20 min</td>
+<td class="px-md py-4">The complete recon pipeline with correlation. More depth, but external sources can fail and mark the result incomplete.</td>
+</tr>
+<tr class="align-top border-b border-surface-variant">
+<th scope="row" class="px-md py-4 text-left font-semibold text-on-surface whitespace-nowrap">Passive Recon</th>
+<td class="px-md py-4 whitespace-nowrap">Short</td>
+<td class="px-md py-4">Low-impact public-source discovery with passive discovery, DNS, WHOIS, email, Wayback and ASN.</td>
+</tr>
+<tr class="align-top border-b border-surface-variant">
+<th scope="row" class="px-md py-4 text-left font-semibold text-on-surface whitespace-nowrap">Active Web</th>
+<td class="px-md py-4 whitespace-nowrap">Medium</td>
+<td class="px-md py-4">Crawler, headers, technologies, CMS, JavaScript and screenshots.</td>
+</tr>
+<tr class="align-top">
+<th scope="row" class="px-md py-4 text-left font-semibold text-on-surface whitespace-nowrap">API &amp; Cloud</th>
+<td class="px-md py-4 whitespace-nowrap">Medium</td>
+<td class="px-md py-4">GraphQL, Swagger, API endpoints, parameters and cloud buckets.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="md:hidden flex flex-col gap-md" aria-label="Scan profiles">
+<li class="bg-surface-container-lowest border border-surface-variant rounded-lg p-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between gap-md"><h3 class="font-semibold text-on-surface">Guided Safe Recon</h3><span class="font-caption text-caption text-on-surface-variant whitespace-nowrap">About 2 to 5 min</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant">The recommended start with a fast, bounded overview of a target&rsquo;s public footprint, without wordlist brute-forcing.</p>
+</li>
+<li class="bg-surface-container-lowest border border-surface-variant rounded-lg p-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between gap-md"><h3 class="font-semibold text-on-surface">Extended Recon</h3><span class="font-caption text-caption text-on-surface-variant whitespace-nowrap">About 15 to 20 min</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant">The complete recon pipeline with correlation. More depth, but external sources can fail and mark the result incomplete.</p>
+</li>
+<li class="bg-surface-container-lowest border border-surface-variant rounded-lg p-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between gap-md"><h3 class="font-semibold text-on-surface">Passive Recon</h3><span class="font-caption text-caption text-on-surface-variant whitespace-nowrap">Short</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Low-impact public-source discovery with passive discovery, DNS, WHOIS, email, Wayback and ASN.</p>
+</li>
+<li class="bg-surface-container-lowest border border-surface-variant rounded-lg p-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between gap-md"><h3 class="font-semibold text-on-surface">Active Web</h3><span class="font-caption text-caption text-on-surface-variant whitespace-nowrap">Medium</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Crawler, headers, technologies, CMS, JavaScript and screenshots.</p>
+</li>
+<li class="bg-surface-container-lowest border border-surface-variant rounded-lg p-md flex flex-col gap-2">
+<div class="flex items-baseline justify-between gap-md"><h3 class="font-semibold text-on-surface">API &amp; Cloud</h3><span class="font-caption text-caption text-on-surface-variant whitespace-nowrap">Medium</span></div>
+<p class="font-body-md text-body-md text-on-surface-variant">GraphQL, Swagger, API endpoints, parameters and cloud buckets.</p>
+</li>
+</ul>
+</section>
+<div class="w-full h-[1px] bg-secondary-fixed/50"></div>
+<section class="flex flex-col gap-lg">
+<div class="flex flex-col gap-sm">
+<h2 class="font-h2 text-h2 text-on-surface">A Clear Product Boundary</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[700px]">Rustler Recon observes and inventories. It does not attack, and it never claims that a vulnerability is confirmed.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-md">
+<h3 class="font-h3 text-h3 text-on-surface">Rustler Recon does</h3>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>Authorized discovery and inventory requests</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>GET, HEAD and OPTIONS observation, with GraphQL limited to fixed queries</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>DNS, TLS, port, web, API and cloud inventory</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>Review signals with traceable provenance</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">check_circle</span>Redacted, data-minimal result storage</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-md">
+<h3 class="font-h3 text-h3 text-on-surface">Rustler Recon does not</h3>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5" aria-hidden="true">cancel</span>No exploits or vulnerability payloads</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5" aria-hidden="true">cancel</span>No state-changing requests such as PUT, PATCH, DELETE or mutations</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5" aria-hidden="true">cancel</span>No login or password checking</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5" aria-hidden="true">cancel</span>No callback or OAST tests</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-outline text-[20px] mt-0.5" aria-hidden="true">cancel</span>No &ldquo;vulnerability confirmed&rdquo; claims</li>
+</ul>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex items-start gap-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full opacity-50 pointer-events-none"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 z-10"><span class="material-symbols-outlined text-secondary" aria-hidden="true">gavel</span></div>
+<div class="flex flex-col gap-sm z-10">
+<h3 class="font-h3 text-h3 text-on-surface">Authorized use only</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[760px]">Rustler sends real, visible requests to the target, and the target can see them in its logs. Scan only your own systems or systems you have explicit written permission to test.</p>
+</div>
+</div>
+</section>
+<div class="w-full h-[1px] bg-secondary-fixed/50"></div>
+<section class="flex flex-col gap-lg">
+<div class="flex flex-col gap-sm">
+<h2 class="font-h2 text-h2 text-on-surface">Coming Next</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[700px]">Three extensions are planned for later versions. Priorities can shift with pilot feedback, so we do not promise dates.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">dashboard</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Web Overview</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A web-based overview that lets you interact with Rustler with a single click.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">bug_report</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Known-Vulnerability Matching</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Selected recon results are also compared with public sources of known vulnerabilities such as CVE. In line with Rustler&rsquo;s observation-only approach, matches are review hints for a human to verify, not confirmed vulnerabilities.</p>
+</div>
+<div class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-2"><span class="material-symbols-outlined text-secondary" aria-hidden="true">description</span></div>
+<h3 class="font-h3 text-h3 text-on-surface">Better Reports and Document Management</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A more capable report, plus a variant of Rustler that supports managing reports and documents.</p>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest border border-surface-variant rounded-lg p-lg flex flex-col lg:flex-row justify-between items-start lg:items-center gap-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-secondary-fixed/20 to-transparent rounded-bl-full opacity-50 pointer-events-none"></div>
+<div class="flex flex-col gap-sm z-10 max-w-[520px]">
+<h2 class="font-h2 text-h2 text-on-surface">Interested in the Pilot?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Rustler Recon 0.9 is not generally available yet. It is in a pilot phase and is provided only to selected test users. Tell us about your use case and we will get back to you personally.</p>
+</div>
+<div class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-col items-stretch gap-4 z-10 lg:shrink-0">
+<a href="mailto:kintsukai4contact@gmail.com?subject=Rustler%20Recon%20Pilot%20Access%20Request" class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-on-surface-variant transition-colors">
+    Request Pilot Access
+    <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+</a>
+<a href="downloads/Rustler_Recon_OnePager_EN.pdf" target="_blank" rel="noopener" class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded flex items-center gap-2 hover:bg-surface-container-low transition-colors">
+    One-Pager (PDF)
+    <span class="material-symbols-outlined text-[18px]" aria-hidden="true">download</span>
+</a>
+<a href="products.html" class="border border-surface-variant text-on-surface font-label-sm text-label-sm px-6 py-3 rounded hover:bg-surface-container-low transition-colors">Back to Products</a>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-lowest text-primary font-['Manrope'] text-sm tracking-wide border-t border-secondary/20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-12 py-16 gap-8">
+<div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+<div class="text-on-surface-variant font-caption text-caption uppercase tracking-widest">&copy; 2026 KintsuKai. All rights reserved.</div>
+<div class="flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="privacy.html">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="terms.html">Terms of Service</a>                    <a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="impessum.html">Imprint</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="https://www.linkedin.com/company/kintsukai">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="https://github.com/kintsu-kai">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-caption text-caption" href="https://discord.gg/ughQasTBPz">Discord</a>
+</div>
+</div>
+</footer>
+<script src="js/init.js"></script>
+</body></html>
